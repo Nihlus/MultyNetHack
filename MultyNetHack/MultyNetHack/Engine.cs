@@ -43,9 +43,10 @@ namespace MultyNetHack
 
         private void InitConsole(int width, int height)
         {
-            Console.WindowWidth = width + 1;
-            Console.BufferWidth = width + 1;
-            Console.WindowHeight = height * 3;
+			Console.SetWindowSize(width, height);
+            //Console.WindowWidth = width + 1;
+            //Console.BufferWidth = width + 1;
+            //Console.WindowHeight = height * 3;
             try
             {
                 Console.CursorVisible = false;
